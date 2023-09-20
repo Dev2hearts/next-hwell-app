@@ -20,6 +20,7 @@ export default function Home({ infos }: IProps) {
       <NextSeo
         title="건강검진센터 위치"
         description="건강검진센터 위치서비스입니다."
+        canonical="https://next-hwell-app.vercel.app/"
       />
       <Header />
       <MapScene />
