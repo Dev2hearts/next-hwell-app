@@ -3,7 +3,7 @@ import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import SEO from '@/next-seo.config';
 import Head from 'next/head';
-import * as gtag from '../lib/gtag';
+import * as gtag from '../lib/gtag.js';
 import Script from 'next/script';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -24,8 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       </Head>
-       {/* Global Site Tag (gtag.js) - Google Analytics */}
-       <Script
+      <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
